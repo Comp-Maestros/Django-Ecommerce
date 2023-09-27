@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-def AboutView(request):
-    
+def BlogView(request):
     context={}
     
-    return render(request,'about/about.html',context)
+    return render(request,'blog.html',context)
