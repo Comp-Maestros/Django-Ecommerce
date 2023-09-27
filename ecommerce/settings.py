@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     
     
     #apps installation
-    'core'
+    'core',
+    'aboutus'
 ]
 
 MIDDLEWARE = [

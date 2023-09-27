@@ -7,5 +7,6 @@ admin.site.site_title='Admin Ecom Shop'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('core.urls',namespace='core'))
+    path('',include('core.urls',namespace='core')),
+    path('aboutus/',include('about.urls',namespace='about'))
 ]
