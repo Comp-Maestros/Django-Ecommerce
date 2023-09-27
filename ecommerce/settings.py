@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     
     #apps installation
     'core',
-    'aboutus'
+    'aboutus',
+    'contact'
 ]
 
 MIDDLEWARE = [
