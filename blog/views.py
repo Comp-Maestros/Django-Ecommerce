@@ -4,4 +4,4 @@ from django.shortcuts import render
 def BlogView(request):
     context={}
     
-    return render(request,'blog.html',context)
+    return render(request,'blog/blog.html',context)
