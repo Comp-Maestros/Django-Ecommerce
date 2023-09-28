@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     
     
     #apps installation
+    'accounts',
     'core',
     'aboutus',
     'contact',  
