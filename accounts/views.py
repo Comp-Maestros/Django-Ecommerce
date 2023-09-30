@@ -5,4 +5,4 @@ def AccountView(request):
     
     context={}
     
-    return render(request,'accounts/register.html')
+    return render(request,'accounts/account.html')

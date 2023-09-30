@@ -38,7 +38,7 @@
             </div>
             
             <!-- IMG --> 
-            <img class="img-responsive margin-top-80 margin-bottom-80" src="images/about-img.jpg" alt="">
+            <img class="img-responsive margin-top-80 margin-bottom-80" src="{%  static 'images/about-img.jpg' %}" alt="">
             <div class="vision-text">
               <div class="col-lg-5">
                 <h5 class="text-left">our vision</h5>
@@ -58,10 +58,10 @@
     <!-- Culture BLOCK -->
     <section class="cultur-block">
       <ul>
-        <li> <img src="images/cultur-img-1.jpg" alt="" > </li>
-        <li> <img src="images/cultur-img-2.jpg" alt="" > </li>
-        <li> <img src="images/cultur-img-3.jpg" alt="" > </li>
-        <li> <img src="images/cultur-img-4.jpg" alt="" > </li>
+        <li> <img src="{% static 'images/cultur-img-1.jpg' %}" alt="" > </li>
+        <li> <img src="{% static 'images/cultur-img-2.jpg' %}" alt="" > </li>
+        <li> <img src="{% static 'images/cultur-img-3.jpg' %}" alt="" > </li>
+        <li> <img src="{% static 'images/cultur-img-4.jpg' %}" alt="" > </li>
       </ul>
       
       <!-- Culture Text -->
@@ -77,7 +77,7 @@
     </section>
     
     <!-- Video -->
-    <section class="video-block"> <img class="img-responsive" src="images/video-img.jpg" alt="" >
+    <section class="video-block"> <img class="img-responsive" src="{% static 'images/video-img.jpg' %}" alt="" >
       <div class="position-center-center"> <a href="#"> <i class="icon-camcorder"></i>watch video </a> </div>
     </section>
     
@@ -95,7 +95,7 @@
           <li class="col-md-4 text-center animate fadeInUp" data-wow-delay="0.4s">
             <article> 
               <!-- abatar -->
-              <div class="avatar"> <img class="img-circle" src="images/team-1.jpg" alt="" > 
+              <div class="avatar"> <img class="img-circle" src="{% static 'images/team-1.jpg' %}" alt="" > 
                 <!-- Team hover -->
                 <div class="team-hover">
                   <div class="position-center-center">
@@ -111,105 +111,13 @@
             </article>
           </li>
           
-          <!-- Member -->
-          <li class="col-md-4 text-center animate fadeInUp" data-wow-delay="0.6s">
-            <article> 
-              <!-- abatar -->
-              <div class="avatar"> <img class="img-circle" src="images/team-2.jpg" alt="" > 
-                <!-- Team hover -->
-                <div class="team-hover">
-                  <div class="position-center-center">
-                    <div class="social-icons"> <a href="#."><i class="icon-social-facebook"></i></a> <a href="#."><i class="icon-social-twitter"></i></a> <a href="#."><i class="icon-social-dribbble"></i></a> </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Team Detail -->
-              <div class="team-names">
-                <h6>jennifer rod</h6>
-                <p>DESIGNER</p>
-              </div>
-            </article>
-          </li>
+ 
           
-          <!-- Member -->
-          <li class="col-md-4 text-center animate fadeInUp" data-wow-delay="0.8s">
-            <article> 
-              <!-- abatar -->
-              <div class="avatar"> <img class="img-circle" src="images/team-3.jpg" alt="" > 
-                <!-- Team hover -->
-                <div class="team-hover">
-                  <div class="position-center-center">
-                    <div class="social-icons"> <a href="#."><i class="icon-social-facebook"></i></a> <a href="#."><i class="icon-social-twitter"></i></a> <a href="#."><i class="icon-social-dribbble"></i></a> </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Team Detail -->
-              <div class="team-names">
-                <h6>natasha singh</h6>
-                <p>DEVELOPER</p>
-              </div>
-            </article>
-          </li>
+     
           
-          <!-- Member -->
-          <li class="col-md-4 text-center">
-            <article> 
-              <!-- abatar -->
-              <div class="avatar"> <img class="img-circle" src="images/team-4.jpg" alt="" > 
-                <!-- Team hover -->
-                <div class="team-hover">
-                  <div class="position-center-center">
-                    <div class="social-icons"> <a href="#."><i class="icon-social-facebook"></i></a> <a href="#."><i class="icon-social-twitter"></i></a> <a href="#."><i class="icon-social-dribbble"></i></a> </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Team Detail -->
-              <div class="team-names">
-                <h6>JOSEPH MARK</h6>
-                <p>Product Designer</p>
-              </div>
-            </article>
-          </li>
-          
-          <!-- Member -->
-          <li class="col-md-4 text-center">
-            <article> 
-              <!-- abatar -->
-              <div class="avatar"> <img class="img-circle" src="images/team-5.jpg" alt="" > 
-                <!-- Team hover -->
-                <div class="team-hover">
-                  <div class="position-center-center">
-                    <div class="social-icons"> <a href="#."><i class="icon-social-facebook"></i></a> <a href="#."><i class="icon-social-twitter"></i></a> <a href="#."><i class="icon-social-dribbble"></i></a> </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Team Detail -->
-              <div class="team-names">
-                <h6>jennifer rod</h6>
-                <p>Quality Head</p>
-              </div>
-            </article>
-          </li>
-          
-          <!-- Member -->
-          <li class="col-md-4 text-center">
-            <article> 
-              <!-- abatar -->
-              <div class="avatar"> <img class="img-circle" src="images/team-6.jpg" alt="" > 
-                <!-- Team hover -->
-                <div class="team-hover">
-                  <div class="position-center-center">
-                    <div class="social-icons"> <a href="#."><i class="icon-social-facebook"></i></a> <a href="#."><i class="icon-social-twitter"></i></a> <a href="#."><i class="icon-social-dribbble"></i></a> </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Team Detail -->
-              <div class="team-names">
-                <h6>natasha singh</h6>
-                <p>DEVELOPER</p>
-              </div>
-            </article>
-          </li>
+ 
+
+
         </ul>
       </div>
     </section>
@@ -231,10 +139,8 @@
           <h4>We work with the best</h4>
           <span>We are proud that we have awesome sponsors</span> </div>
         <ul class="clients-img">
-          <li> <img class="img-responsive" src="images/c-img-1.jpg" alt=""> </li>
-          <li> <img class="img-responsive" src="images/c-img-2.jpg" alt=""> </li>
-          <li> <img class="img-responsive" src="images/c-img-3.jpg" alt=""> </li>
-          <li> <img class="img-responsive" src="images/c-img-4.jpg" alt=""> </li>
+          <li> <img class="img-responsive" src="{% static 'images/c-img-1.jpg' %}" alt=""> </li>
+          
         </ul>
       </div>
     </section>
