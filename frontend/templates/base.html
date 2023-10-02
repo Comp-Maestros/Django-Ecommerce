@@ -183,8 +183,8 @@
                   </li>
                   <li><a href="{%  url 'cart:cart' %}">MY CART</a></li>
                   <li><a href="{% url 'accounts:register' %}">CREATE ACCOUNT</a></li>
-                  <li><a href="{% url 'accounts:register' %}">LOGIN </a></li>
-                  <li><a href="#">LOG OUT</a></li>
+                  <li><a href="{% url 'accounts:login' %}">LOGIN </a></li>
+                  <li><a href="{% url 'accounts:login' %}">LOG OUT</a></li>
                 </ul>
               </li>
               
@@ -212,7 +212,7 @@
                   </li>
                   <li class="margin-0">
                     <div class="row">
-                      <div class="col-xs-6"> <a href="shopping-cart.html" class="btn">VIEW CART</a></div>
+                      <div class="col-xs-6"> <a href="{% url 'cart:shop' %}" class="btn">VIEW CART</a></div>
                       <div class="col-xs-6 "> <a href="checkout.html" class="btn">CHECK OUT</a></div>
                     </div>
                   </li>

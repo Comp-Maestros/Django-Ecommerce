@@ -13,4 +13,4 @@ def RegisterView(request):
 def LoginView(request):
     
     context={}
-    return render(request,'login/login.htmml',context)
+    return render(request,'login/login.html',context)
