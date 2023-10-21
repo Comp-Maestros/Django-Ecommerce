@@ -14,8 +14,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. 
           Sed feugiat, tellus vel tristique posuere, diam</p>
         <ol class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">PAGES</a></li>
+          <li><a href="{% url 'core:home' %}">Home</a></li>
           <li class="active">LOGIN</li>
         </ol>
       </div>
@@ -25,7 +24,6 @@
   <!-- Content -->
   <div id="content"> 
     
-    <!--======= PAGES INNER =========-->
     <section class="chart-page padding-top-100 padding-bottom-100">
       <div class="container"> 
         
@@ -39,19 +37,20 @@
               <!-- ESTIMATE SHIPPING & TAX -->
               <div class="col-sm-7">
                 <h6>LOGIN YOUR ACCOUNT</h6>
-                <form>
+                <form method="post">
+                  {% csrf_token %}
                   <ul class="row">
                     
                     <!-- Name -->
                     <li class="col-md-12">
                       <label> USERNAME
-                        <input type="text" name="first-name" value="" placeholder="">
+                        <input type="text" name="username" value="{{ form.username.value|default:'' }}" placeholder="">
                       </label>
                     </li>
                     <!-- LAST NAME -->
                     <li class="col-md-12">
                       <label> PASSWORD
-                        <input type="password" name="last-name" value="" placeholder="">
+                        <input type="password" name="password" value="" placeholder="">
                       </label>
                     </li>
                     
@@ -74,6 +73,11 @@
                         <a href="#.">Forget Password</a>
                       </div>
                     </li>
+                    <li class="col-md-4">
+                      <div class="checkbox margin-0 margin-top-20 text-right">
+                        <a href="{% url 'accounts:register' %}">Don't have Account</a>
+                      </div>
+                    </li>
                   </ul>
                 </form>
                 
@@ -84,31 +88,23 @@
                 <h6>LOGIN WITH</h6>
                 
                 <ul class="login-with">
-                	<li>
-                    	<a href="#."><i class="fa fa-facebook"></i>FACEBOOK</a>
-                    
-                    </li>
-                    
                     <li>
-                    	<a href="#."><i class="fa fa-google"></i>GOOGLE</a>
+                        <a href="#."><i class="fa fa-facebook"></i>FACEBOOK</a>
                     
                     </li>
-                    
                     <li>
-                    	<a href="#."><i class="fa fa-twitter"></i>TWITTER</a>
-                    
+                        <a href="#."><i class="fa fa-google"></i>GOOGLE</a>
                     </li>
-                
-                </ul>
-                
-                
+                    <li>
+                        <a href="#."><i class="fa fa-twitter"></i>TWITTER</a>
+                    </li>
+                </ul>   
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
     <!-- About -->
     <section class="small-about padding-top-150 padding-bottom-150">
       <div class="container"> 
