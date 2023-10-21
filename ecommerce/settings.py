@@ -1,5 +1,7 @@
 
 from pathlib import Path
+import django
+django.setup()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,6 +21,14 @@ import os
 # Application definition
 
 INSTALLED_APPS = [
+    
+       #apps installation
+    'core',
+    'aboutus',
+    'checkout',
+    'contact',  
+    'mycart',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -26,15 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    
-    
-    #apps installation
-    'accounts',
-    'core',
-    'aboutus',
-    'checkout',
-    'contact',  
-    'mycart',
+ 
 ]
 
 MIDDLEWARE = [
@@ -66,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-
+AUTH_USER_MODEL = 'accounts.CustomUser'
 WSGI_APPLICATION = 'ecommerce.wsgi.application'
 #
 
