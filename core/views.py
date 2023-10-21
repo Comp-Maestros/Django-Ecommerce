@@ -1,7 +1,10 @@
 from django.shortcuts import render
-
+from products.models import Item
 # Create your views here.
 def HomeView(request):
-    context={}
+    items=Item.objects.all()
+    context={
+        'items':items
+    }
     
-    return render(request,'index.html')
+    return render(request,'index.html',context)
