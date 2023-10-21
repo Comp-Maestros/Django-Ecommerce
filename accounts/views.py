@@ -13,10 +13,10 @@ def login_view(request):
             user = authenticate(request, email=email, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return redirect('core:home')
     else:
         form = LoginForm(request)
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'accounts/login.html', {'form': form})
 
 
 def register_view(request):
@@ -25,12 +25,12 @@ def register_view(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('home')
+            return redirect('core:home')
     else:
         form = RegistrationForm()
-    return render(request, 'register.html', {'form': form})
+    return render(request, 'accounts/register.html', {'form': form})
 
 
 def logout_view(request):
     logout(request)
-    return redirect('home')
+    return redirect('accounts:login')
