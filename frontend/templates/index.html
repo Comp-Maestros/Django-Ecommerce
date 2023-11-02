@@ -206,26 +206,38 @@
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. 
           Sed feugiat, tellus vel tristique posuere, diam</span> </div>
         
-        <!-- Popular Item Slide -->
-        <div class="papular-block block-slide"> 
-          <!-- Item -->
-          <div class="item"> 
-            <!-- Item img -->
-            <div class="item-img"> <img class="img-1" src="{% static 'images/product-4.jpg' %}" alt="" > <img class="img-2" src="{% static 'images/product-2.jpg' %}" alt="" > 
-              <!-- Overlay -->
-              <div class="overlay">
-                <div class="position-center-center">
-                  <div class="inn"><a href="{% static 'images/product-4.jpg' %}" data-lighter><i class="icon-magnifier"></i></a> <a href="#." data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon-basket"></i></a> <a href="#." data-toggle="tooltip" data-placement="top" title="Add To WishList"><i class="icon-heart"></i></a></div>
-                </div>
+<!-- Popular Item Slide -->
+<div class="papular-block block-slide">
+  {% for item in popular %}
+  <!-- Item -->
+  <div class="item"> 
+      <!-- Item img -->
+      <div class="item-img"> 
+          <img class="img-1" src="{{ item.Imageurl }}" alt="" > 
+          <img class="img-2" src="{{ item.Imageurl2 }}" alt="" > 
+          <!-- Overlay -->
+          <div class="overlay">
+              <div class="position-center-center">
+                  <div class="inn">
+                      <a href="{{ item.Imageurl }}" data-lighter><i class="icon-magnifier"></i></a> 
+                      <a href="#." data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon-basket"></i></a> 
+                      <a href="#." data-toggle="tooltip" data-placement="top" title="Add To WishList"><i class="icon-heart"></i></a>
+                  </div>
               </div>
-            </div>
-            <!-- Item Name -->
-            <div class="item-name"> <a href="#.">STool</a>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <!-- Price --> 
-            <span class="price"><small>$</small>299</span> </div>
-        </div>
+          </div>
+      </div>
+      <!-- Item Name -->
+      <div class="item-name"> 
+          <a href="#.">{{ item.name }}</a>
+          <p>{{ item.description }}</p>
+      </div>
+      <!-- Price --> 
+      <span class="price"><small>$</small>{{ item.price }}</span> 
+  </div>
+  {% endfor %}
+</div>
+
+
       </div>
     </section>
     
