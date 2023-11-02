@@ -18,3 +18,23 @@ class Item(models.Model):
 
     def __str__(self):
         return self.name
+    
+    @property
+    def Imageurl(self):
+        try:
+            url=self.image_1_thumbnail.url
+        except:
+            url=''
+
+                
+        return url
+
+    @property
+    def Imageurl2(self):
+        try:
+            url=self.image_2_thumbnail.url
+        except:
+            url=''
+
+                
+        return url
