@@ -180,12 +180,12 @@
   {% for item in items %}
   <div class="item"> 
     <!-- Images --> 
-    <img class="img-1" src="{{ item.image_2_thumbnail.url }}" alt=""> <img class="img-2" src="{{ item.image_2.url }}" alt=""> 
+    <img class="img-1" src="{{ item.Imageurl2 }}" alt=""> <img class="img-2" src="{{ item.Imageurl2 }}" alt=""> 
     <!-- Overlay  -->
     <div class="overlay"> 
       <!-- Price --> 
       <span class="price"><small>$</small>{{ item.price }}</span>
-      <div class="position-center-center"> <a href="{{ item.image_1_thumbnail.url }}" data-lighter><i class="icon-magnifier"></i></a> </div>
+      <div class="position-center-center"> <a href="{{ item.Imageurl }}" data-lighter><i class="icon-magnifier"></i></a> </div>
     </div>
     <!-- Item Name -->
     <div class="item-name"> <a href="#.">{{ item.name }}</a>
