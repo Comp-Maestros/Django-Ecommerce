@@ -3,6 +3,7 @@ decouple==0.0.7
 Django==4.2.5
 django-appconf==1.0.5
 django-imagekit==5.0.0
+django-jazzmin==2.6.0
 mysqlclient==2.2.0
 pilkit==3.0
 Pillow==10.1.0
