@@ -16,6 +16,7 @@ urlpatterns = [
     path('blog/',include('blog.urls',namespace='blog')),
     path('contact/',include('contact.urls',namespace='contact')),   
     path('mycart/',include('mycart.urls',namespace='mycart')),
-    path('products/',include('products.urls',namespace='products'))
+    path('products/',include('products.urls',namespace='products')),
+    path('knowledge/',include('knowledge.urls',namespace='knowledge'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
